@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_average_power"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Середньодобова потужність (Pc)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/input_old_deviation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Старе σ"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/input_new_deviation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Нове σ"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/input_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Вартість електроенергії (B)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Розрахувати" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Результати будуть тут"
+        android:textSize="18sp" />
+</LinearLayout>
